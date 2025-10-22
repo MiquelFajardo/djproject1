@@ -16,6 +16,8 @@ class MySeleniumTests(StaticLiveServerTestCase):
     def setUpClass(cls):
         super().setUpClass()
         opts = Options()
+        opts.add_argument("--headless")
+        opts.add_argument("--no-sandbox")
         cls.selenium = WebDriver(options=opts)
         cls.selenium.implicitly_wait(5)
 	# Crear el superusuari
