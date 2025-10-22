@@ -1,0 +1,14 @@
+*.pyc
+/env/
+/venv/
+/static/*
+/media/*
+.env
+*.env
+db.sqlite3
+.coverage
+__pycache__
+testdb.json
+*.log
+*.tmp
+*.bak
